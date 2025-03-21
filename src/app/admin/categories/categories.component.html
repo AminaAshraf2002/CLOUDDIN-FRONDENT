@@ -1,0 +1,301 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="admin-container">
+    <!-- Sidebar - Same as Dashboard -->
+    <div class="sidebar">
+        <div class="logo-area">
+            <img src="assets/images/logo.png" alt="ClouddIn Logo" class="logo">
+            <span class="logo-text">ClouddIn Admin</span>
+        </div>
+        
+        <nav class="menu">
+            <a href="admin/dashboard" class="menu-item">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="admin/users" class="menu-item">
+                <i class="fas fa-users"></i>
+                <span>Users</span>
+            </a>
+            <a href="admin/courses" class="menu-item">
+                <i class="fas fa-book"></i>
+                <span>Courses</span>
+            </a>
+            <a href="admin/categories" class="menu-item active">
+                <i class="fas fa-list"></i>
+                <span>Categories</span>
+            </a>
+            <a href="admin/lessons" class="menu-item">
+                <i class="fas fa-video"></i>
+                <span>Lessons</span>
+            </a>
+            <a href="/" class="menu-item">
+                <i class="fas fa-money-check"></i>
+                <span>Logout</span>
+            </a>
+        </nav>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Top Header -->
+        <header class="top-header">
+            <h1>Category Management</h1>
+            <div class="admin-profile">
+                <span>Admin</span>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+        
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Header with Search and Filters -->
+            <div class="header-actions">
+                <div class="search-filters">
+                    <input type="text" placeholder="Search categories..." class="search-input">
+                    <select class="filter-select">
+                        <option value="all">All Courses</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="ecommerce">Ecommerce</option>
+                    </select>
+                </div>
+                <button class="add-category-btn">
+                    <i class="fas fa-plus"></i>
+                    Add New Category
+                </button>
+            </div>
+            
+            <!-- Categories Container -->
+            <div class="categories-container">
+                <!-- Digital Marketing Course Section -->
+                <div class="course-section">
+                    <div class="course-header">
+                        <div class="course-title">
+                            <div class="course-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h2 class="course-name">Digital Marketing Masterclass</h2>
+                        </div>
+                        <button class="course-action">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <table class="categories-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Instructor</th>
+                                <th>Duration</th>
+                                <th>Lessons</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="SEO" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">SEO</span>
+                                            <span class="description">Learn search engine optimization techniques</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Sarah Johnson</td>
+                                <td class="category-duration">4 weeks</td>
+                                <td class="category-lessons">4 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="Social Media Marketing" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">Social Media Marketing</span>
+                                            <span class="description">Master social media strategy and execution</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Priya Sharma</td>
+                                <td class="category-duration">3 weeks</td>
+                                <td class="category-lessons">6 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="Email Marketing" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">Email Marketing</span>
+                                            <span class="description">Learn effective email campaign strategies</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Sarah Johnson</td>
+                                <td class="category-duration">2 weeks</td>
+                                <td class="category-lessons">4 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="Content Marketing" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">Content Marketing</span>
+                                            <span class="description">Create engaging content strategies</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Rahul Kapoor</td>
+                                <td class="category-duration">3 weeks</td>
+                                <td class="category-lessons">5 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="add-category-row">
+                        <button class="add-category-to-course">
+                            <i class="fas fa-plus"></i>
+                            Add Category to Digital Marketing
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Graphic Design Course Section -->
+                <div class="course-section">
+                    <div class="course-header">
+                        <div class="course-title">
+                            <div class="course-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h2 class="course-name">Graphic Designing Pro</h2>
+                        </div>
+                        <button class="course-action">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <table class="categories-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Instructor</th>
+                                <th>Duration</th>
+                                <th>Lessons</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="Adobe Photoshop" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">Adobe Photoshop</span>
+                                            <span class="description">Master image editing techniques</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Michael Chen</td>
+                                <td class="category-duration">4 weeks</td>
+                                <td class="category-lessons">8 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="Adobe Illustrator" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">Adobe Illustrator</span>
+                                            <span class="description">Create vector graphics and illustrations</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Michael Chen</td>
+                                <td class="category-duration">3 weeks</td>
+                                <td class="category-lessons">6 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="category-name">
+                                        <img src="https://via.placeholder.com/50" alt="UI/UX Design" class="category-thumbnail">
+                                        <div class="category-details">
+                                            <span class="name">UI/UX Design</span>
+                                            <span class="description">Design user interfaces and experiences</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="category-instructor">Ananya Das</td>
+                                <td class="category-duration">5 weeks</td>
+                                <td class="category-lessons">10 lessons</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view-btn">View</button>
+                                        <button class="action-btn edit-btn">Edit</button>
+                                        <button class="action-btn delete-btn">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="add-category-row">
+                        <button class="add-category-to-course">
+                            <i class="fas fa-plus"></i>
+                            Add Category to Graphic Design
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Ecommerce Course Section -->
+               
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="page-controls">
+                    <button class="page-nav">Previous</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-nav">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

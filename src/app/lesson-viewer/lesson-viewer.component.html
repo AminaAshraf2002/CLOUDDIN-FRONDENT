@@ -1,0 +1,74 @@
+<div class="dashboard-container">
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="loading-container">
+      <p>Loading course details...</p>
+    </div>
+  
+    <!-- Error State -->
+    <div *ngIf="error" class="error-container">
+      <p>{{ error }}</p>
+    </div>
+  
+    <!-- Main Content -->
+    <ng-container *ngIf="!isLoading && !error && course && subcategory">
+      <main class="course-container">
+        <!-- Back Navigation -->
+        <a 
+          [routerLink]="courseId ? ['/user/course', courseId] : ['/courses']"
+          class="back-link"
+        >
+          <i class="fa fa-arrow-left"></i> Back to Subcategories
+        </a>
+  
+        <!-- Course Header -->
+        <div class="course-header">
+          <h2>{{ subcategory.title || 'Subcategory' }}</h2>
+          <p>Instructor: {{ course.instructor || 'Unknown' }}</p>
+        </div>
+  
+        <!-- Lesson Viewer Container -->
+        <div class="lesson-viewer-container">
+          <!-- Material Tabs for Lessons -->
+          <mat-tab-group 
+            (selectedTabChange)="onTabChanged($event.index)"
+            color="primary"
+          >
+            <mat-tab *ngFor="let lesson of lessons" [label]="'Lesson ' + lesson.day">
+              <div class="lesson-content">
+                <h3>{{ getLessonTitle(lesson) }}</h3>
+                <p>{{ getLessonDescription(lesson) }}</p>
+  
+                <!-- Video Container -->
+                <div 
+                  class="video-container"
+                  *ngIf="lesson.videoUrl"
+                >
+                  <iframe 
+                    *ngIf="sanitizeVideoUrl(lesson.videoUrl)"
+                    [src]="sanitizeVideoUrl(lesson.videoUrl)"
+                    frameborder="0"
+                    allowfullscreen
+                    width="100%"
+                    height="400"
+                  ></iframe>
+                </div>
+  
+                <!-- Lesson Topics -->
+                <div 
+                  class="lesson-topics"
+                  *ngIf="getLessonTopics(lesson).length"
+                >
+                  <h4>Key Topics:</h4>
+                  <ul>
+                    <li *ngFor="let topic of getLessonTopics(lesson)">
+                      {{ topic }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </main>
+    </ng-container>
+  </div>

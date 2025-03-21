@@ -134,7 +134,7 @@ export class RegisterComponent implements OnInit {
     };
 
     // API call with comprehensive error handling
-    this.http.post('http://localhost:3000/api/users/register', userData)
+    this.http.post('https://clouddin.onrender.com/api/users/register', userData)
       .subscribe({
         next: (response: any) => {
           this.isLoading = false;

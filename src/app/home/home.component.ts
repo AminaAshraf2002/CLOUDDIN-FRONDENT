@@ -70,7 +70,7 @@ export class HomeComponent {
       title: 'GRAPHIC DESIGNING PRO',
       modules: 4,
       duration: '1 Month',
-      image: 'https://www.bluehost.in/blog/wp-content/smush-webp/2023/10/how-to-become-a-reseller-1024x576.png.webp',
+      image: 'https://images.shiksha.com/mediadata/images/articles/1708410614phpnjbsFG.jpeg',
       description: 'Our comprehensive Graphic Designing Course is designed to equip students with the skills and knowledge needed to succeed in the creative industry. Through hands-on training and real-world projects, students will learn the fundamentals of graphic design, including typography, color theory, and composition. Our expert instructors will guide students through the latest design software, including Adobe Creative Cloud, and teach them how to create stunning visuals for logos, brochures, business cards, websites, and social media graphics. By the end of the course, students will have a professional portfolio and the confidence to pursue a career in graphic design, branding, advertising, or digital media.',
       badge: 'Pro',
       category: 'GRAPHIC DESIGNING',

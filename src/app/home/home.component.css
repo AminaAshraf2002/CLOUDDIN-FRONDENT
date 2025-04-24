@@ -48,13 +48,20 @@ body::before {
 }
 
 /* Carousel Image Styling with enhanced visuals */
+.carousel-item {
+  position: relative;
+  overflow: hidden; /* Ensures overflow is hidden for zoom effect */
+}
+
 .carousel-item img {
   width: 100%;
-  max-width: 100%;
-  height: 400px; /* Increased height for more impact */
-  object-fit: cover;
+  height: 450px;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  object-position: center; /* Keeps the image centered */
   transition: transform 0.8s ease, filter 0.5s ease;
-  border-radius: 0; /* The container already has border radius */
+  border-radius: 0; /* Assuming the container handles border radius */
+  margin-top: 21px;
+  display: block;
 }
 
 .carousel-item:hover img {
